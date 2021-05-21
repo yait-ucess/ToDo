@@ -25,7 +25,12 @@
  * スプレッド構文　...
  */
 //配列の展開
-const arr1 = [1, 2];
+// const arr1 = [1, 2];
 
-const sumFunc = (num1, num2) => console.log(num1 + num2);
-sumFunc(...arr1);
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+// sumFunc(...arr1);
+
+//まとめる
+const arr2 = [1, 2, 3, 4, 5];
+const [num1, num2, ...arr3] = arr2;
+console.log(num1, num2, arr3);
