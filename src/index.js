@@ -85,7 +85,16 @@
 //   typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています。" : "許容範囲内です。";
-};
-console.log(checkSum(90, 9));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています。" : "許容範囲内です。";
+// };
+// console.log(checkSum(90, 9));
+
+/**
+ * 論理演算子の本当の意味を知ろう
+ */
+
+// || は、左がfalseの場合、右を返す
+const num = null;
+const fee = num || "金額未設定です";
+console.log(fee);
