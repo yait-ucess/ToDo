@@ -47,7 +47,7 @@
 /**
  * mapやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "佐藤"];
+// const nameArr = ["田中", "山田", "佐藤"];
 // for (let index = 0; index < nameArr.length; index++ ) {
 //   console.log(`${index + 1}番目は${nameArr[index]}です。`);
 // }
@@ -65,12 +65,19 @@ const nameArr = ["田中", "山田", "佐藤"];
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "佐藤") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "佐藤") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
 
-console.log(newNameArr);
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+//ある条件 ? 条件がtrue : 条件がfalse
+const num = 1300;
+console.log(num.toLocaleString());
