@@ -18,5 +18,14 @@
 /**
  * デフォルト値、引数など
  */
-const sayHello = (name = "たかし") => console.log(`こんにちは、${name}さん！`);
-sayHello();
+// const sayHello = (name = "たかし") => console.log(`こんにちは、${name}さん！`);
+// sayHello();
+
+/**
+ * スプレッド構文　...
+ */
+//配列の展開
+const arr1 = [1, 2];
+
+const sumFunc = (num1, num2) => console.log(num1 + num2);
+sumFunc(...arr1);
