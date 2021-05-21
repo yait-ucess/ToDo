@@ -95,6 +95,11 @@
  */
 
 // || は、左がfalseの場合、右を返す
-const num = null;
-const fee = num || "金額未設定です";
-console.log(fee);
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// && は、左がtrueの場合、右を返す
+const num2 = 100;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
