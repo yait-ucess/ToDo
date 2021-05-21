@@ -79,5 +79,8 @@
  * 三項演算子
  */
 //ある条件 ? 条件がtrue : 条件がfalse
-const num = 1300;
-console.log(num.toLocaleString());
+const num = "1300";
+
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+console.log(formattedNum);
