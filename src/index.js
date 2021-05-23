@@ -34,9 +34,14 @@ const onClickAdd = () => {
     const p = document.createElement("p");
     p.innerText = text;
 
-    //buttonタグ（戻す）生成
+    //button（戻す）タグ生成
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
+    backButton.addEventListener("click", () => {
+      //押された戻すボタンの親タグを完了リストから削除
+      const deleteTarget = backButton.parentNode;
+      document.getElementById("complete-list").removeChild(deleteTarget);
+    });
 
     //divタグの子要素に各要素を設定
     addTarget.appendChild(p);
