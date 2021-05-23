@@ -8,7 +8,12 @@ const onClickAdd = () => {
   //div生成
   const div = document.createElement("div");
   div.className = "list-row";
-  console.log(div);
+
+  //pタグ生成
+  const p = document.createElement("p");
+  p.className = "todo-name";
+  p.innerText = inputText;
+  console.log(p);
 };
 
 document
